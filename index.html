@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigiKey | Advanced Digital Marketing & Growth Agency</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- GSAP & ScrollTrigger CDN for high-end animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #07090e;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        /* Abstract Glowing Mesh Backgrounds */
+        .mesh-bg {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.15), rgba(147, 51, 234, 0.15));
+            filter: blur(120px);
+            border-radius: 50%;
+            z-index: -1;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+    </style>
+</head>
+<body class="relative selection:bg-blue-600 selection:text-white">
+
+    <!-- Abstract Background Blobs -->
+    <div class="mesh-bg top-[-10%] left-[-10%]"></div>
+    <div class="mesh-bg top-[40%] right-[-10%]"></div>
+    <div class="mesh-bg bottom-[-10%] left-[20%]"></div>
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 w-full z-50 glass-card border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="text-2xl font-extrabold tracking-wider bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                DIGIKEY
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#hero" class="hover:text-white transition">Overview</a>
+                <a href="#services-section" class="hover:text-white transition">Capabilities</a>
+                <a href="#contact" class="hover:text-white transition">Connect</a>
+            </nav>
+            <a href="#contact" class="px-5-py-2.5 rounded-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold transition shadow-lg shadow-blue-600/20 px-5 py-2">
+                Inquire
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex items-center justify-center relative px-6 pt-20">
+        <div class="max-w-4xl text-center">
+            <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full glass-card text-xs font-semibold uppercase tracking-widest text-blue-400 mb-6 border border-blue-500/20">
+                <span>Next-Generation Growth Architecture</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight leading-tight mb-8">
+                Engineering Digital Dominance for <span class="bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-500 bg-clip-text text-transparent">Global Brands</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto font-light leading-relaxed mb-10">
+                Data-driven precision meets elite creative engineering. We scale market leaders through strategic social media engineering, algorithmic search visibility, and high-conversion advertisement placement.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#services-section" class="px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold transition shadow-xl shadow-blue-500/20">
+                    Explore Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pinned Scroll-Driven Services Section -->
+    <section id="services-section" class="relative h-screen overflow-hidden flex items-center border-t border-white/5">
+        <div class="absolute top-10 left-12 z-10">
+            <span class="text-xs uppercase tracking-widest text-slate-500 font-bold">Core Capabilities</span>
+            <h2 class="text-2xl font-bold text-slate-200">Execution Framework</h2>
+        </div>
+
+        <div id="slider-container" class="flex w-[500vw] h-full items-center pl-12 md:pl-24">
+            
+            <!-- Service 1: Social Media Marketing -->
+            <div class="service-slide w-screen h-[70vh] flex items-center justify-center px-6 md:px-20">
+                <div class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center glass-card p-10 rounded-3xl relative overflow-hidden">
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" class="w-8 h-8 object-contain" alt="LinkedIn">
+                            <img src="https://www.vectorlogo.zone/logos/instagram/instagram-icon.svg" class="w-8 h-8 object-contain" alt="Instagram">
+                            <span class="text-xs uppercase tracking-widest text-blue-400 font-bold border-l border-white/20 pl-3">Platform Integration</span>
+                        </div>
+                        <h3 class="text-3xl md:text-4xl font-bold tracking-tight">Social Media Marketing</h3>
+                        <p class="text-slate-400 font-light leading-relaxed">
+                            Building brand equity and community authority across high-engagement networks through optimized organic content frameworks and structured consumer relationship building.
+                        </p>
+                    </div>
+                    <div class="h-64 rounded-2xl overflow-hidden relative border border-white/10 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover opacity-80" alt="Social Media Marketing">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 2: SEO -->
+            <div class="service-slide w-screen h-[70vh] flex items-center justify-center px-6 md:px-20">
+                <div class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center glass-card p-10 rounded-3xl relative overflow-hidden">
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-3">
+                            <img src="https://www.vectorlogo.zone/logos/google/google-icon.svg" class="w-8 h-8 object-contain" alt="Google">
+                            <img src="https://www.vectorlogo.zone/logos/google_analytics/google_analytics-icon.svg" class="w-8 h-8 object-contain" alt="Analytics">
+                            <span class="text-xs uppercase tracking-widest text-blue-400 font-bold border-l border-white/20 pl-3">Search Architecture</span>
+                        </div>
+                        <h3 class="text-3xl md:text-4xl font-bold tracking-tight">Search Engine Optimization (SEO)</h3>
+                        <p class="text-slate-400 font-light leading-relaxed">
+                            Dominating search engine result pages through technical infrastructure optimization, structural content authority, and algorithmic tracking to maximize organic user acquisition.
+                        </p>
+                    </div>
+                    <div class="h-64 rounded-2xl overflow-hidden relative border border-white/10 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover opacity-80" alt="SEO Optimization">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 3: Graphic Designing -->
+            <div class="service-slide w-screen h-[70vh] flex items-center justify-center px-6 md:px-20">
+                <div class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center glass-card p-10 rounded-3xl relative overflow-hidden">
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-3">
+                            <img src="https://www.vectorlogo.zone/logos/adobe_photoshop/adobe_photoshop-icon.svg" class="w-8 h-8 object-contain" alt="Photoshop">
+                            <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" class="w-8 h-8 object-contain" alt="Figma">
+                            <span class="text-xs uppercase tracking-widest text-blue-400 font-bold border-l border-white/20 pl-3">Abstract Creative Suite</span>
+                        </div>
+                        <h3 class="text-3xl md:text-4xl font-bold tracking-tight">Graphic Designing</h3>
+                        <p class="text-slate-400 font-light leading-relaxed">
+                            Innovative visual identity generation utilizing abstract design concepts, structural typography, and high-end aesthetic alignment to represent your brand proposition accurately.
+                        </p>
+                    </div>
+                    <div class="h-64 rounded-2xl overflow-hidden relative border border-white/10 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover opacity-80" alt="Graphic Designing">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 4: Google Ads -->
+            <div class="service-slide w-screen h-[70vh] flex items-center justify-center px-6 md:px-20">
+                <div class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center glass-card p-10 rounded-3xl relative overflow-hidden">
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-3">
+                            <img src="https://www.vectorlogo.zone/logos/google/google-icon.svg" class="w-8 h-8 object-contain" alt="Google">
+                            <img src="https://www.vectorlogo.zone/logos/google_ads/google_ads-icon.svg" class="w-8 h-8 object-contain" alt="Google Ads">
+                            <span class="text-xs uppercase tracking-widest text-blue-400 font-bold border-l border-white/20 pl-3">Paid Acquisition</span>
+                        </div>
+                        <h3 class="text-3xl md:text-4xl font-bold tracking-tight">Google Ads</h3>
+                        <p class="text-slate-400 font-light leading-relaxed">
+                            High-intent search capture and display remarketing infrastructure. We engineer performance-focused ad campaigns geared toward reducing cost-per-acquisition (CPA) at scale.
+                        </p>
+                    </div>
+                    <div class="h-64 rounded-2xl overflow-hidden relative border border-white/10 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover opacity-80" alt="Google Ads">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 5: Meta Ads -->
+            <div class="service-slide w-screen h-[70vh] flex items-center justify-center px-6 md:px-20">
+                <div class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center glass-card p-10 rounded-3xl relative overflow-hidden">
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-3">
+                            <img src="https://www.vectorlogo.zone/logos/facebook/facebook-icon.svg" class="w-8 h-8 object-contain" alt="Facebook">
+                            <img src="https://www.vectorlogo.zone/logos/instagram/instagram-icon.svg" class="w-8 h-8 object-contain" alt="Instagram">
+                            <span class="text-xs uppercase tracking-widest text-blue-400 font-bold border-l border-white/20 pl-3">Social Advertising</span>
+                        </div>
+                        <h3 class="text-3xl md:text-4xl font-bold tracking-tight">Meta Ads</h3>
+                        <p class="text-slate-400 font-light leading-relaxed">
+                            Advanced audience segmentation and creative testing frameworks running across Facebook, Instagram, and Messenger to capture high-value market share profitably.
+                        </p>
+                    </div>
+                    <div class="h-64 rounded-2xl overflow-hidden relative border border-white/10 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover opacity-80" alt="Meta Ads">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Centered Contact Footer -->
+    <footer id="contact" class="py-24 border-t border-white/10 bg-[#040609] relative">
+        <div class="max-w-xl mx-auto px-6 text-center space-y-6">
+            <h2 class="text-3xl font-bold tracking-tight">Initiate Collaboration</h2>
+            <p class="text-slate-400 text-sm font-light">
+                Ready to scale your enterprise architecture? Connect directly with our core engineering team.
+            </p>
+            <div class="pt-4">
+                <a href="mailto:digikey@gmail.com" class="inline-block text-xl md:text-2xl font-semibold text-blue-400 hover:text-blue-300 transition tracking-wide underline underline-offset-8 decoration-blue-500/30">
+                    digikey@gmail.com
+                </a>
+            </div>
+            <div class="pt-12 text-xs text-slate-600 font-medium">
+                &copy; 2026 DigiKey Inc. All rights reserved. Professional Digital Infrastructure.
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP Horizontal Scroll Logic -->
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        const sections = gsap.utils.toArray(".service-slide");
+        
+        gsap.to(sections, {
+            xPercent: -100 * (sections.length - 1),
+            ease: "none",
+            scrollTrigger: {
+                trigger: "#services-section",
+                pin: true,
+                scrub: 1,
+                snap: 1 / (sections.length - 1),
+                end: "+=3000",
+            }
+        });
+    </script>
+</body>
+</html>
